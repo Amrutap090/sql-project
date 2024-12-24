@@ -122,4 +122,4 @@ inner join netflix_director nd on nt.show_id=nd.show_id
 inner join netflix_genre ng on nt.show_id = ng.show_id
 where nt.type = 'movie' and ng.genre in ('comedies','horror movies')
 group by nd.director
-having COUNT(ng.genre)=2# sql-project
+having COUNT(ng.genre)=2
